@@ -1,3 +1,43 @@
+Ejercicio 1
+
+print("""Sumador de dos números positivos""")
+
+x=float(input("Ingrese un número positivo ")) #Primer número a pedir
+y=float(input("Ingrese otro número positivo ")) #Segundo número a pedir
+if x<0 or y<0:# Condición de verificación falsa
+    print("No se pueden sumar ya que ambos núemeros ingresados no son positivos")
+else: #Condición de verificación verdadera
+    print("La suma de los números es: ", x + y )
+
+Ejercicio 2
+
+print("""Buscador de un número si pertenece a un intervalo de intersección con dos intervalos dados""")#Título del programa
+
+r=float(input("Ingrese el número a averiguar en la intersección ")) #Número a pedir al usuario
+a=float(input("Ingrese el primer extremo del primer intervalo ")) #Primer extremo del primer intervalo
+b=float(input("Ingrese el segundo extremo del primer intervalo "))#Segundo extremo del primer intervalo
+c=float(input("Ingrese el primer extremo del segundo intervalo "))#Primer extremo del segundo intervalo
+d=float(input("Ingrese el segundo extremo del segundo intervalo "))#Segundo extremo del segundo intervalo
+if a>b: #Verificando y ordenando extremos 
+    e1=a
+    a=b
+    b=e1 #e1 es extremo 1 del intervalo [a,b]
+if c>d: #e2 es extremo 1 del intervalo (c,d]
+    e2=c
+    c=d
+    d=e2
+if ((r>=a and r<=b) and (r>c and r<=d)): #Verificación del número en el intervalo condición postiva
+    print("El número se encuentra en la intersección de los intervalos dados")
+    if c>a and d<b:
+        print("El intervalo de intersección es (",c,",",d,"]") #Opcional, Intervalo de intersección hallado, si el intervalo (c,d] está contenido en el intervalo [a,b] 
+    else:
+        print("EL intervalo de intersección es (",a,",",b,"]") #Opcional, Intervalo de intersección hallado, si el intervalo [a,b] está contenido en el intervalo (c,d]
+
+else:
+    print("El número no se encuentra en la intersección de los intervalos dados ") #Verificación del número en el intervalo condición negativa
+
+
+
 Ejercicio 3
 
 print("""Ordenador de números de la forma negativo,cero,positivo""") #Título del programa
