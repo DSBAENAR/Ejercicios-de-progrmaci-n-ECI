@@ -1,0 +1,25 @@
+Ejercicio 3
+
+print("""Ordenador de números de la forma negativo,cero,positivo""") #Título del programa
+
+num_1 = float(input("Ingrese el primer número ")) #Primer número a pedir
+num_2 = float(input("Ingrese el segundo número "))#Segundo número a pedir
+num_3 = float(input("Ingrese el tercer número "))#Tercer número a pedir
+
+if num_1 < num_2 and num_2 < num_3:
+    print("Los números ordenados son: " ,num_1,"0",num_3)
+    
+if num_1 < num_3 and num_3 < num_2:
+    print("Los números ordenados son: ", num_1,"0",num_2)
+    
+if num_2 < num_3 and num_3 < num_1:
+    print("Los números ordenados son: " ,num_2,"0",num_1)
+    
+if num_2 < num_1 and num_1 < num_3:
+    print("Los números ordenados son: " ,num_2,"0",num_3)
+    
+if num_3 < num_2 and num_2 < num_1:
+    print("Los números ordenados son: ", num_3,"0",num_1)
+    
+if num_3 < num_1 and num_1 < num_2:
+    print("Los números ordenados son: ", num_3,"0",num_2)
